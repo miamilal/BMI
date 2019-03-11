@@ -1,0 +1,11 @@
+height = input ('請輸入身高（公尺）：')
+weight = input ('請輸入體重（公斤）：')
+height = float(height)
+weight = float(weight)
+BMI = weight/(height*height)
+if BMI < 18.5 :
+	print('你的BMI：', BMI , '體重過輕')
+elif BMI >= 18.5 and BMI < 24 :
+	print ('你的BMI：', BMI , '正常範圍')
+elif BMI >= 24 :
+	print ('你的BMI：', BMI , '體重過重')
